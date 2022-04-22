@@ -10,7 +10,7 @@ server:
   config:
     repositories: |
       - type: git
-        url: https://github.com/openinfradev/decapod-bootstrap.git
+        url: https://github.com/Jaesang/decapod-bootstrap.git
   additionalApplications:
     - name: decapod-apps
       namespace: argo
@@ -20,8 +20,8 @@ server:
       project: decapod-bootstrap
       source:
         path: decapod-apps
-        repoURL: https://github.com/openinfradev/decapod-bootstrap.git
-        targetRevision: HEAD
+        repoURL: https://github.com/Jaesang/decapod-bootstrap.git
+        targetRevision: fix-path-decapod
         directory:
           recurse: true
           jsonnet: {}
@@ -37,8 +37,8 @@ server:
       project: decapod-bootstrap
       source:
         path: decapod-projects
-        repoURL: https://github.com/openinfradev/decapod-bootstrap.git
-        targetRevision: HEAD
+        repoURL: https://github.com/Jaesang/decapod-bootstrap.git
+        targetRevision: fix-path-decapod
         directory:
           recurse: true
           jsonnet: {}
